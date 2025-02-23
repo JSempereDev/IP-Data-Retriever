@@ -16,3 +16,38 @@ This Python script retrieves the public IP address of your machine and fetches a
 To install the `requests` library, run:
 ```bash
 pip install requests
+```
+
+## Usage
+Run the script without arguments (auto-fetches your public IP):
+
+```bash
+python ip_data_retriever.py
+```
+This will automatically fetch your public IP from the ifconfig.me service and get detailed data for that IP.
+
+## Run the script with a custom IP:
+```bash
+python ip_data_retriever.py <your-ip-address>
+```
+Replace <your-ip-address> with any IP you want to get information about. If no IP is provided, the script will fetch your public IP.
+
+## Example Output
+If the script successfully retrieves data, you'll see something like:
+
+```vbnet
+Copiar
+Editar
+IP: 123.45.67.89
+Location: New York, USA
+ISP: Some ISP Name
+...
+```
+If there's an error, the script will output an error message like:
+
+```nginx
+Something went wrong
+```
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
