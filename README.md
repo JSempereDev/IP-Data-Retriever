@@ -68,4 +68,5 @@ Something went wrong
 ```
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+IP Data Retriever uses the MIT license, so feel free to fork it and customize it as you please.
