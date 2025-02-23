@@ -36,12 +36,30 @@ Replace <your-ip-address> with any IP you want to get information about. If no I
 If the script successfully retrieves data, you'll see something like:
 
 ```vbnet
-Copiar
-Editar
-IP: 123.45.67.89
-Location: New York, USA
-ISP: Some ISP Name
-...
+{
+  "ip": "140.82.121.4",
+  "network": {
+    "cidr": "140.82.121.0/24",
+    "hosts": {
+      "start": "140.82.121.1",
+      "end": "140.82.121.254"
+    },
+    "autonomous_system": {
+      "asn": 36459,
+      "name": "GITHUB",
+      "organization": "GitHub, Inc.",
+      "country": "US",
+      "rir": "ARIN"
+    }
+  },
+  "location": {
+    "city": "Frankfurt am Main",
+    "country": "Germany",
+    "timezone": "Europe/Berlin",
+    "latitude": 50.1169,
+    "longitude": 8.6837
+  }
+}
 ```
 If there's an error, the script will output an error message like:
 
